@@ -7,8 +7,13 @@ package frc.robot.subsystems;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 public class Bent extends SubsystemBase {
+  
+  private TalonFX m_IntakeMotor;
+
   /** Creates a new Bent. */
-  public Bent() {}
+  public Bent() {
+    m_IntakeMotor = new TalonFX(1234561234567890);
+  }
 
   @Override
   public void periodic() {
